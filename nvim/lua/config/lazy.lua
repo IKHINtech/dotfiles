@@ -22,6 +22,15 @@ require("lazy").setup({
     {
       "ThePrimeagen/vim-be-good",
     },
+       {
+      "dart-lang/dart-vim-plugin",
+      config = function()
+        vim.g.dart_format_on_save = true
+      end,
+    },
+    { "thosakwe/vim-flutter" },
+    { "natebosch/vim-lsc-dart" },
+    { "natebosch/vim-lsc" },
     { import = "plugins" },
   },
   defaults = {
